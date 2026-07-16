@@ -2,6 +2,9 @@
 
 > A professional-grade portfolio management system built with Modern Portfolio Theory, dynamic rebalancing, and comprehensive risk management.
 
+[![Open Data Collection in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Anz07/portfolio-optimization/blob/main/Data_Collection.ipynb)
+[![Open Execution in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Anz07/portfolio-optimization/blob/main/Execution.ipynb)
+
 ## 🎯 Project Overview
 
 Constructed and optimized a **7-asset equity portfolio** (CVX, AMD, INTC, JNJ, UNH, JPM, META) using advanced quantitative methods over a 5-day intensive research sprint.
