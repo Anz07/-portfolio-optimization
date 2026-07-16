@@ -1,67 +1,66 @@
 # 📈 Quantitative Portfolio Optimization
-**Phase 2 | Modern Portfolio Theory | July 2026**
+
+> A professional-grade portfolio management system built with Modern Portfolio Theory, dynamic rebalancing, and comprehensive risk management.
+
+## 🎯 Project Overview
+
+Constructed and optimized a **7-asset equity portfolio** (CVX, AMD, INTC, JNJ, UNH, JPM, META) using advanced quantitative methods over a 5-day intensive research sprint.
+
+## 🛠️ Key Features
+
+- ✅ **Efficient Frontier** — Markowitz mean-variance optimization
+- ✅ **Monte Carlo Simulation** — 10,000+ portfolio simulations
+- ✅ **Risk Management** — VaR & CVaR at 90%, 95%, 99% confidence
+- ✅ **Stress Testing** — COVID crash, 2008 GFC, rate shock scenarios
+- ✅ **Dynamic Rebalancing** — Monthly, quarterly with transaction costs
+- ✅ **Risk Parity** — Equal risk contribution portfolio
+- ✅ **Performance Attribution** — Rolling Sharpe, drawdown analysis
+
+## 📊 Assets Covered
+
+| Ticker | Company | Sector |
+|--------|---------|--------|
+| CVX | Chevron | Energy |
+| AMD | Advanced Micro Devices | Technology |
+| INTC | Intel | Technology |
+| JNJ | Johnson & Johnson | Healthcare |
+| UNH | UnitedHealth Group | Healthcare |
+| JPM | JPMorgan Chase | Financials |
+| META | Meta Platforms | Technology |
+
+## 📁 Repository Structure
+
+```
+portfolio-optimization/
+├── Data_Collection.ipynb    # Data download & EDA
+├── Execution.ipynb          # Full optimization pipeline
+└── results/                 # Charts & visualizations
+```
+
+## 🔑 Key Results
+
+- 📈 **Max Sharpe Portfolio** — Best risk-adjusted returns
+- 🛡️ **Min Volatility Portfolio** — Lowest drawdown profile
+- ⚖️ **Risk Parity** — Most diversified risk allocation
+- 💰 **Dynamic Rebalancing** — Outperformed static buy-and-hold
+
+## 🧰 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Pandas](https://img.shields.io/badge/Pandas-2.0-green)
+![NumPy](https://img.shields.io/badge/NumPy-1.24-orange)
+![SciPy](https://img.shields.io/badge/SciPy-1.10-red)
+![yFinance](https://img.shields.io/badge/yFinance-0.2-yellow)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7-purple)
+
+## 📚 Methodology
+
+1. **Data Collection** — 5 years of daily price data via yFinance
+2. **Statistical Analysis** — Returns, covariance, correlation
+3. **Optimization** — Convex optimization via SciPy
+4. **Backtesting** — Walk-forward validation 2022–2024
+5. **Risk Analysis** — Tail risk, stress scenarios, drawdowns
+6. **Rebalancing** — Dynamic strategies with transaction costs
 
 ---
-
-## 🎯 Overview
-Applied **Markowitz Modern Portfolio Theory (MPT)** to construct 
-an optimal, risk-adjusted portfolio across 7 equity assets using 
-Python. Built a full quantitative pipeline from data collection 
-to dynamic rebalancing with transaction cost modeling.
-
-**Assets:** CVX | AMD | INTC | JNJ | UNH | JPM | META  
-**Period:** 2019–2025 (Training: 2019–2022 | Test: 2022–2025)
-
----
-
-## 📊 Key Results
-
-| Strategy | Ann. Return | Volatility | Sharpe Ratio | Max Drawdown |
-|---|---|---|---|---|
-| ⭐ Max Sharpe | 12.52% | 18.99% | 0.396 | -21.34% |
-| Min Volatility | 6.53% | 15.87% | 0.097 | -22.29% |
-| Equal Weight | 6.07% | 20.75% | 0.052 | -30.36% |
-| Risk Parity | 5.70% | 19.27% | 0.036 | -29.19% |
-
----
-
-## 🏆 Final Recommendation
-**70% Max Sharpe + 30% Min Volatility blend**  
-Rebalancing: Quarterly | Transaction Cost: 10bps per trade
-
-| Asset | Weight | Role |
-|---|---|---|
-| AMD | ~28% | Growth |
-| JNJ | ~18% | Defensive |
-| UNH | ~16% | Defensive |
-| META | ~11% | Growth |
-| INTC | ~10% | Value/Tech |
-| CVX | ~9% | Value/Dividend |
-| JPM | ~8% | Cyclical |
-
----
-
-## 🔬 Methodology
-- ✅ Efficient Frontier — 10,000 Monte Carlo simulations
-- ✅ Convex Optimization — SLSQP solver (scipy)
-- ✅ Risk Metrics — VaR & CVaR at 95%/99% confidence
-- ✅ Stress Testing — COVID crash, 2022 rate hikes, GFC
-- ✅ Dynamic Rebalancing — Monthly/Quarterly/Annual
-- ✅ Transaction Cost Modeling — 10bps per rebalance
-
----
-
-## 🛠️ Tech Stack
-| Tool | Purpose |
-|---|---|
-| Python 3.10 | Core language |
-| yfinance | Market data collection |
-| numpy / pandas | Data manipulation |
-| scipy | Portfolio optimization |
-| matplotlib / seaborn | Visualizations |
-| Google Colab | Development environment |
-
----
-
-*Built as part of a structured quantitative finance 
-self-study program | July 2026
+*Built as part of a quantitative finance research sprint — July 2026*
